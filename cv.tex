@@ -1,0 +1,223 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Compact Academic CV
+% LaTeX Template
+% Version 1.0 (10/6/2012)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Dario Taraborelli (http://nitens.org/taraborelli/home)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important:
+% This template needs to be compiled using XeLaTeX
+%
+% Note: this template has the option to use the Hoefler Text font, see the
+% font configurations section below for instructions on using this font
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{article} % Document font size and paper size
+
+\usepackage{fontspec} % Allows the use of OpenType fonts
+
+%\usepackage{geometry} % Allows the configuration of document margins
+%\geometry{textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in} % Document margin settings
+\usepackage[margin=1in,top=1in, bottom=1in]{geometry}
+\setlength\parindent{0in} % Remove paragraph indentation
+
+\usepackage[usenames,dvipsnames]{xcolor} % Custom colors
+
+\usepackage{sectsty} % Allows changing the font options for sections in a document
+\usepackage[normalem]{ulem} % Custom underlining
+\usepackage{xunicode} % Allows generation of unicode characters from accented glyphs
+\defaultfontfeatures{Mapping=tex-text} % Converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
+
+\usepackage{marginnote} % For margin years
+\newcommand{\years}[1]{\marginnote{\scriptsize #1}} % New command for including margin years
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt} % Slightly increase the distance of the margin years from the contant
+\reversemarginpar
+
+\usepackage[xetex, bookmarks, colorlinks, breaklinks, pdftitle={Alejandro Ochoa CV},pdfauthor={Alejandro Ochoa}]{hyperref} % PDF setup - set your name and the title of the document to be incorporated into the final PDF file meta-information
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue} % Link colors
+
+% MATH stuff (limited)
+\usepackage{xspace}
+\usepackage{amsmath,amsfonts,amssymb}
+\newcommand{\Fst}{\ensuremath{F_{\text{ST}}}\xspace}
+
+%----------------------------------------------------------------------------------------
+%	FONT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+% Linux Libertine Font (default)
+\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O} % Main text font
+%\setmonofont[Scale=0.8]{Monaco} % Set mono font (e.g. phone numbers)
+\sectionfont{\mdseries\upshape\Large} % Set font options for sections
+\subsectionfont{\mdseries\scshape\normalsize} % Set font options for subsections
+\subsubsectionfont{\mdseries\upshape\large} % Set font options for subsubsections
+\chardef\&="E050 % Custom ampersand character
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{center}
+  {\LARGE Alejandro Ochoa}\\[0.5cm] % Your name
+  Duke Center for Statistical Genetics and Genomics\\
+  Department of Biostatistics and Bioinformatics\\
+  Duke University Medical Center\\
+  Medical Science Research Building (MSRB) III\\
+  3 Genome Ct, Room 1241\\
+  Durham, NC 27710\\
+  \href{mailto:alejandro.ochoa@duke.edu}{alejandro.ochoa@duke.edu}\\ % Your email address
+  \url{https://ochoalab.github.io/} \\ % http://viiia.org/research % Your academic/personal website
+\end{center}
+
+%\vfill % Whitespace between contact information and specific CV information
+
+%\section*{Research Interests}
+%Statistics, Bioinformatics, Computational Biology\\ % Your primary areas of research interest
+%Population Genetics\\
+%Protein Sequence Evolution and Function\\
+%Human, Malaria Parasites
+
+\section*{Education}
+
+\years{2013}\textsc{PhD} in Molecular Biology, Princeton University\\
+Dissertation: \emph{Protein domain prediction using context statistics, the false discovery rate, and comparative genomics, with application to Plasmodium falciparum}\\
+Advisers: Mona Singh (Computer Science) and Manuel Llinás (Molecular Biology)\\
+\years{2006}\textsc{BS} in Biology and Mathematics, Massachusetts Institute of Technology
+
+\section*{Awards \& Honors}
+
+\years{2008}NSF Graduate Research Fellowship. Computational Biology.\\
+\years{2008}Ford Foundation Diversity Fellowship Predoc. Comp. (Declined, listed as Honorable Mention.)\\
+\years{2006}MIT Department of Biology Merck Prize. Awarded to a graduating senior for outstanding research and academic performance in biophysics or bioinformatics.\\
+\years{2001}Mexican Math Olympiad Gold Medal. Awarded to top 15 competitors nationally.
+
+\section*{Employment}
+
+\years{2018-now}\emph{Assistant Professor},
+Duke Center for Statistical Genetics and Genomics, 
+Department of Biostatistics and Bioinformatics,
+Duke University\\
+\years{2013-2018}\emph{Postdoctoral Research Associate} at John D Storey's group,
+Lewis-Sigler Institute for Integrative Genomics, and
+Center for Statistics and Machine Learning,
+Princeton University
+
+\section*{Publications}
+
+\input{pubs.tex} % generated automatically!
+
+\section*{Distributed software}
+
+\input{software.tex} % generated automatically!
+
+\section*{Invited Talks}
+
+\input{talks.tex} % generated automatically!
+
+
+\section*{Conference posters}
+
+\years{2016}Alejandro Ochoa, John D Storey, Srikanth Gottipati, Shashank Rohatagi, Andrew Forbes, Deborah Profit, Raymond Sanchez, Margaretta Nyilas, William Carson.
+Mixed Effects Modeling of Placebo Response Across 8 Placebo-controlled Aripiprazole Trials Spanning 20 Years in Acutely Relapsed Schizophrenia Patients.
+Neuroscience Education Institute Psychopharmacology Congress.
+Broadmoor Convention Center, Colorado Springs, CO.\\
+\years{2016}Srikanth Gottipati, Alejandro Ochoa, Shashank Rohatagi, Andrew Forbes, Deborah Profit, Raymond Sanchez, Margaretta Nyilas, William Carson.
+Canonical Loadings of PANSS Subscales Show Differential Placebo and Aripiprazole Drug Responses in Schizophrenia Patients.
+Neuroscience Education Institute Psychopharmacology Congress.
+Broadmoor Convention Center, Colorado Springs, CO.\\
+\years{2015}Alejandro Ochoa, John D Storey.
+\Fst generalized for arbitrary population structures.
+John W. Tukey 100th Birthday conf.
+Center for Statistics and Machine Learning, Princeton, NJ. \\
+\years{2013}Alejandro Ochoa, John D Storey, Manuel Llinás, Mona Singh.
+Forget the \emph{E}-value: family-based \emph{q}-values for protein domain prediction, and empirical error detection.
+Biological sequence analysis and probabilistic models conf.
+HHMI Janelia Farm, Ashburn, VA. \\
+\years{2010}Alejandro Ochoa, Manuel Llinás, Mona Singh.
+Using context to predict protein domains across diverse organisms.
+Recomb Systems Biology conf.
+Columbia University, New York, NY.
+
+\section*{Teaching}
+
+\subsection*{Princeton University}
+\years{2017}Intro to Genomics and Comp Bio.  Quant Comp Bio, Comp Sci. (Co-Lecturer Fall 2017)\\
+\years{2016-2017}Discussion Leader.  Summer Undergraduate Research Program (Summer 2016, 2017)\\
+\years{2014-2017}Statistical Treatment of Data. Mol Bio, Quant Comp Bio. (Workshop Fall 2014, 2015, 2016, 2017)\\
+\years{2011}Intro to Genomics and Comp Mol Bio.  Mol Bio, Comp Sci. (TA Fall 2011)\\
+\years{2008}Core Laboratory. Mol Bio. (TA Spring 2008)
+
+\subsection*{Massachusetts Institute of Technology}
+\years{2005}Calculus. OME Project Interphase (TA Summer 2005)\\
+\years{2003-2004}Multivar Calculus and Diff Eqs. OME Seminar XL (Tutor Fall 2003, Spring 2004)\\
+\years{2003-2004}Calculus. MITE2S Program (TA Summer 2003, 2004)
+
+\newpage % HACK temp break
+\section*{Mentoring}
+\years{2011}Sebastian Nasamu (MIT), summer student, Llinás lab.
+Cloned DNA of malaria protein domains, purified proteins, used protein-binding microarrays to test for DNA binding.\\
+\years{2010}Jeremy Bigness (Princeton), graduate rotation, Singh lab.
+Built HMMs of ortholog proteins.\\
+\years{2009}Neo Chung (Princeton), graduate rotation, Llinás lab.
+Wrote scripts to analyze sequencing data.
+
+\section*{Research experience}
+
+\years{2013-2018} Postdoctoral Research, Storey Lab, Princeton. Developed new definitions and tools to study arbitrary population structures. Also applied GWAS and mixed effects modeling to longitudinal psychiatric drug clinical trials.\\
+\years{2007-2013} Graduate Research Thesis, Singh Lab and Llinás Lab, Princeton.  Developed probabilistic models and statistical methods that improve protein domain prediction.  Studied the \emph{Plasmodium falciparum} proteome, focusing on the AP2 transcription factors.  Used experimental techniques (cloning, protein purification and protein-binding microarrays) to test predicted AP2 domains for DNA binding.\\
+\years{2007} Graduate Rotation, Tavazoie Lab, Princeton. Cloned an RNA aptamer for a phage display assay.\\
+\years{2006-2007} Graduate Rotation, Singh Lab, Princeton. Analyzed protein interactions predicted from the presence of interacting domain pairs.\\
+\years{2006} Graduate Rotation, Troyanskaya Lab, Princeton.  Built and analyzed a potential "gold standard" of Gene Ontology terms integrated from predictions of multiple sources, in \emph{Saccharomyces cerevisiae} and \emph{Homo sapiens}.\\
+\years{2005-2006} Undergraduate Research Assistant, Keating Lab, MIT.  Analyzed full-atom computational protein designs using modified van der Waals potentials.
+
+%\section*{Service to the profession}
+%\years{2015} Reviewed a manuscript for the RECOMB 2016 conference.\\
+%\years{2014} Reviewed a manuscript for PLoS Computational Biology.\\
+%\years{2011} Reviewed a manuscript for BMC Bioinformatics.
+
+\section*{Extracurricular University Activities}
+
+Latino Graduate Student Association, Princeton University.\years{2006-2010} Board member: Technology Specialist 2007-2010 (handled website, email list, photos, calendar).\\
+\years{2002-2006} Association of Puerto Rican students, MIT. Regular member.
+
+\section*{Outreach}
+
+\years{2017}Panelist at HISPA Latinos in College Conference. Princeton University.\\
+\years{2010}Ivy-plus recruiting fair at University of Puerto Rico (4 campuses) for Princeton.\\
+\years{2008-2011}Science and Engineering Expo. HHMI and Princeton University.\\
+\years{2007}Helped local high school students with college personal statements. PUPP, Princeton University.
+
+\newpage % HACK temp break
+\section*{Languages}
+
+English. Native proficiency.\\
+Spanish. Native proficiency.\\
+French. Fluent reading and writing, conversational speaking.
+
+\vfill{} % Whitespace before final footer
+
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+
+\begin{center}
+  {\scriptsize Last updated: \today} % Any final footer text such as a URL to the latest version of your CV, last updated date, compiled in XeTeX, etc
+  % \- •\- \href{http://www.LaTeXTemplates.com}{http://www.LaTeXTemplates.com}
+\end{center}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

@@ -1,0 +1,40 @@
+*~
+unpub/*
+
+## list trimmed from https://github.com/github/gitignore/blob/master/TeX.gitignore
+
+## Core latex/pdflatex auxiliary files:
+*.aux
+*.log
+#*.fls
+*.out
+*.toc
+#*.fmt
+#*.fot
+#*.cb
+#*.cb2
+#.*.lb
+
+## Bibliography auxiliary files (bibtex/biblatex/biber):
+*.bbl
+#*.bcf
+*.blg
+#*-blx.aux
+*-blx.bib
+*.run.xml
+
+# beamer
+*.nav
+#*.pre
+*.snm
+#*.vrb
+
+# only in SVN cases so far...
+# # minitoc
+# *.maf
+# *.mlf
+# *.mlt
+# *.mtc[0-9]*
+# *.slf[0-9]*
+# *.slt[0-9]*
+# *.stc[0-9]*
